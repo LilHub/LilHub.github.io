@@ -47,14 +47,14 @@ textarea{
 .default-section {
 	padding: 140px 0;
 }
-.default-section.small {
+.default-section.small-section {
 	padding: 70px 0;
 }
 @media (max-width: 767px){
 	.default-section{
 		padding: 80px 0;
 	}
-	.default-section.small{
+	.default-section.small-section{
 		padding: 40px 0;
 	}
 }
@@ -79,12 +79,17 @@ textarea{
 	font-weight: 300;
 	letter-spacing: .3em;
 }
-.title.small {	
+.title.small-section {
 	letter-spacing: .4em;
 	margin-bottom: 30px;
 }
-.title.small > * {
+.title.small-section > * {
 	font-size: 14px;
+}
+.info {
+    font-size: 11px;
+    color: #aaa;
+    line-height: 39px;
 }
 @media (max-width: 767px){
 	.title {
@@ -253,11 +258,7 @@ textarea.form-control {
 	z-index: 99;
 	width: 100%;
 }
-.header-logo {
-	margin-left: 29px;
-}
 .header-nav {
-	margin-right: 32px;
 	line-height: 21px;
 }
 .header-nav a {
@@ -278,6 +279,9 @@ textarea.form-control {
 }
 .header .navbar-toggle .icon-bar{
 	background-color: #fff;
+}
+.navbar-collapse{
+	padding: 0;
 }
 
 @media (max-width: 767px){
@@ -372,6 +376,9 @@ textarea.form-control {
 /* ====INNER END==== */
 
 /* ====ABOUT STUDIO==== */
+.about-studio {
+    border-bottom: 1px solid #777777;
+}
 .about-studio .about-us-text {
 	margin-bottom: 100px;
 }
@@ -821,16 +828,15 @@ textarea.form-control {
 .subscribe-us .title{
 	margin-bottom: 15px;
 }
- span.info {
-	font-size: 11px;
-	color: #aaa;
-	line-height: 39px;
-}
+
 @media (max-width: 767px){
 	.form-control{
 		max-width: 100%;
 		margin-bottom: 10px;
 	}
+    .subscribe-us input[name="userEmail"]{
+        width: 100%;
+    }
 }
 @media (max-width: 479px){
 	.subscribe-us input[name="userEmail"]{
@@ -888,16 +894,7 @@ textarea.form-control {
 	font-size: 13px;
 	padding: 12px 20px;
 }
-.contact-us .form-submit .require-info{
-	line-height: 37px;
-	float: left;
-}
-.contact-us .form-submit .require-info,
-.require-info:hover,
-.require-info:active,
-.require-info:focus{
-	color: #aaa;
-}
+
 @media (max-width: 991px){
 	.contact-item .contact-item-content{
 		margin-left: 10px;
@@ -921,7 +918,7 @@ textarea.form-control {
 	.contact-us .form-submit{
 		text-align: center;
 	}
-	.contact-us .form-submit .require-info{
+	.contact-us .form-submit .info{
 		float: none;
 	}
 }
